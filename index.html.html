@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KisanBazaar - India's premier farmer marketplace. Buy fresh vegetables, fruits, spices, grains and dairy directly from local farmers. Farm to table, fresh and organic.">
+    <title>KisanBazaar — Farm Fresh, Direct from Farmers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="tractor-icon">🚜</div>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <p>Loading Fresh Goodness...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" id="logo">
+                <span class="logo-icon">🌾</span>
+                <span class="logo-text">Kisan<span class="logo-highlight">Bazaar</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#farmers" class="nav-link">Our Farmers</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content" data-animate="fade-right">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    🇮🇳 India's #1 Farmer Marketplace
+                </div>
+                <h1 class="hero-title">
+                    From <span class="text-gradient">Indian Farms</span><br>
+                    To Your <span class="text-gradient">Table</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Empowering Indian farmers by connecting them directly with you. 
+                    Buy farm-fresh vegetables, fruits, spices & more — straight from the khet!
+                </p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary" id="shopNowBtn">
+                        <span>Shop Fresh Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Our Story</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat" data-animate="fade-up" data-delay="200">
+                        <span class="stat-number" data-count="5000">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Farmers</span>
+                    </div>
+                    <div class="stat" data-animate="fade-up" data-delay="400">
+                        <span class="stat-number" data-count="200">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat" data-animate="fade-up" data-delay="600">
+                        <span class="stat-number" data-count="50000">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-animate="fade-left">
+                <div class="hero-img-wrapper">
+                    <img src="images/hero-farmer.png" alt="Indian Farmer with fresh produce" loading="eager">
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,60 1440,60 L1440,120 L0,120 Z" fill="var(--bg-primary)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Marquee Banner -->
+    <section class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>🥬 Fresh Vegetables</span>
+                <span class="marquee-dot">●</span>
+                <span>🥭 Seasonal Fruits</span>
+                <span class="marquee-dot">●</span>
+                <span>🌶️ Organic Spices</span>
+                <span class="marquee-dot">●</span>
+                <span>🌾 Pure Grains</span>
+                <span class="marquee-dot">●</span>
+                <span>🥛 Farm Dairy</span>
+                <span class="marquee-dot">●</span>
+                <span>🍯 Natural Honey</span>
+                <span class="marquee-dot">●</span>
+                <span>🥬 Fresh Vegetables</span>
+                <span class="marquee-dot">●</span>
+                <span>🥭 Seasonal Fruits</span>
+                <span class="marquee-dot">●</span>
+                <span>🌶️ Organic Spices</span>
+                <span class="marquee-dot">●</span>
+                <span>🌾 Pure Grains</span>
+                <span class="marquee-dot">●</span>
+                <span>🥛 Farm Dairy</span>
+                <span class="marquee-dot">●</span>
+                <span>🍯 Natural Honey</span>
+                <span class="marquee-dot">●</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">🧺 Browse By</span>
+                <h2 class="section-title">Our <span class="text-gradient">Categories</span></h2>
+                <p class="section-desc">From the heart of Indian farms — handpicked categories for your kitchen</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-animate="zoom-in" data-delay="0" data-category="vegetables">
+                    <div class="cat-img-wrap">
+                        <img src="images/vegetables.png" alt="Fresh Vegetables">
+                    </div>
+                    <div class="cat-content">
+                        <h3>Fresh Vegetables</h3>
+                        <p>Tomatoes, Okra, Brinjal, Potatoes & more</p>
+                        <span class="cat-count">45+ Items</span>
+                    </div>
+                    <div class="cat-hover-overlay">
+                        <a href="#products" class="btn btn-small">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-animate="zoom-in" data-delay="100" data-category="fruits">
+                    <div class="cat-img-wrap">
+                        <img src="images/fruits.png" alt="Fresh Fruits">
+                    </div>
+                    <div class="cat-content">
+                        <h3>Seasonal Fruits</h3>
+                        <p>Mangoes, Bananas, Guavas, Pomegranates</p>
+                        <span class="cat-count">35+ Items</span>
+                    </div>
+                    <div class="cat-hover-overlay">
+                        <a href="#products" class="btn btn-small">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-animate="zoom-in" data-delay="200" data-category="spices">
+                    <div class="cat-img-wrap">
+                        <img src="images/spices.png" alt="Spices and Grains">
+                    </div>
+                    <div class="cat-content">
+                        <h3>Spices & Grains</h3>
+                        <p>Turmeric, Red Chilli, Rice, Wheat, Dal</p>
+                        <span class="cat-count">60+ Items</span>
+                    </div>
+                    <div class="cat-hover-overlay">
+                        <a href="#products" class="btn btn-small">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-animate="zoom-in" data-delay="300" data-category="dairy">
+                    <div class="cat-img-wrap">
+                        <img src="images/dairy.png" alt="Dairy Products">
+                    </div>
+                    <div class="cat-content">
+                        <h3>Farm Dairy</h3>
+                        <p>Fresh Milk, Paneer, Dahi, Pure Ghee</p>
+                        <span class="cat-count">20+ Items</span>
+                    </div>
+                    <div class="cat-hover-overlay">
+                        <a href="#products" class="btn btn-small">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-animate="zoom-in" data-delay="400" data-category="grains">
+                    <div class="cat-img-wrap">
+                        <img src="images/spices.png" alt="Grains - Anaaj">
+                    </div>
+                    <div class="cat-content">
+                        <h3>Grains</h3>
+                        <p>Gehu, Chaval, Bajra, Makka, Jowar</p>
+                        <span class="cat-count">30+ Items</span>
+                    </div>
+                    <div class="cat-hover-overlay">
+                        <a href="#products" class="btn btn-small">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Banner -->
+    <section class="features-banner">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item" data-animate="fade-up" data-delay="0">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h4>100% Organic</h4>
+                    <p>Grown naturally without harmful chemicals</p>
+                </div>
+                <div class="feature-item" data-animate="fade-up" data-delay="150">
+                    <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h4>Quick Delivery</h4>
+                    <p>Same day delivery to your doorstep</p>
+                </div>
+                <div class="feature-item" data-animate="fade-up" data-delay="300">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h4>Support Farmers</h4>
+                    <p>Fair prices directly to the farmer</p>
+                </div>
+                <div class="feature-item" data-animate="fade-up" data-delay="450">
+                    <div class="feature-icon"><i class="fas fa-award"></i></div>
+                    <h4>Quality Assured</h4>
+                    <p>Rigorous quality checks on every product</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">🛒 Fresh Picks</span>
+                <h2 class="section-title">Today's <span class="text-gradient">Harvest</span></h2>
+                <p class="section-desc">Handpicked from farms across India, delivered fresh to you</p>
+            </div>
+            <div class="products-filter" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="vegetables">🥬 Vegetables</button>
+                <button class="filter-btn" data-filter="fruits">🥭 Fruits</button>
+                <button class="filter-btn" data-filter="spices">🌶️ Spices</button>
+                <button class="filter-btn" data-filter="dairy">🥛 Dairy</button>
+                <button class="filter-btn" data-filter="grains">🌾 Grains</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products loaded by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images" data-animate="fade-right">
+                    <div class="about-img-main">
+                        <img src="images/hero-farmer.png" alt="Indian Farmer">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">10+</span>
+                        <span class="exp-text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content" data-animate="fade-left">
+                    <span class="section-tag">🌱 Our Mission</span>
+                    <h2 class="section-title">Empowering <span class="text-gradient">Indian Farmers</span></h2>
+                    <p class="about-text">
+                        KisanBazaar was born from a simple idea — <strong>every Indian farmer deserves a fair price</strong> 
+                        for their hard work. We cut out the middlemen and connect farmers directly with consumers, 
+                        ensuring fresher produce at better prices for everyone.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h5>Direct from Farm</h5>
+                                <p>No middlemen, better prices for farmers & buyers</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h5>Fresh Guaranteed</h5>
+                                <p>Harvested today, delivered today</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h5>Community First</h5>
+                                <p>Supporting rural livelihoods across India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Join the Movement</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farmers Section -->
+    <section id="farmers" class="farmers-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">👨‍🌾 Meet</span>
+                <h2 class="section-title">Our Proud <span class="text-gradient">Farmers</span></h2>
+                <p class="section-desc">The real heroes behind your fresh food</p>
+            </div>
+            <div class="farmers-grid">
+                <div class="farmer-card" data-animate="fade-up" data-delay="0">
+                    <div class="farmer-avatar">
+                        <div class="farmer-avatar-placeholder">👨‍🌾</div>
+                    </div>
+                    <h4>Ramesh Patel</h4>
+                    <span class="farmer-location"><i class="fas fa-map-marker-alt"></i> Gujarat</span>
+                    <p>Organic vegetable farmer with 15 years of experience. Specializes in tomatoes, okra and chillies.</p>
+                    <div class="farmer-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(4.9)</span>
+                    </div>
+                </div>
+                <div class="farmer-card" data-animate="fade-up" data-delay="150">
+                    <div class="farmer-avatar">
+                        <div class="farmer-avatar-placeholder">👩‍🌾</div>
+                    </div>
+                    <h4>Lakshmi Devi</h4>
+                    <span class="farmer-location"><i class="fas fa-map-marker-alt"></i> Andhra Pradesh</span>
+                    <p>Champion rice grower and spice cultivator. Known for her premium Basmati and turmeric.</p>
+                    <div class="farmer-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>(4.8)</span>
+                    </div>
+                </div>
+                <div class="farmer-card" data-animate="fade-up" data-delay="300">
+                    <div class="farmer-avatar">
+                        <div class="farmer-avatar-placeholder">👨‍🌾</div>
+                    </div>
+                    <h4>Sukhdev Singh</h4>
+                    <span class="farmer-location"><i class="fas fa-map-marker-alt"></i> Punjab</span>
+                    <p>Third-generation wheat and dairy farmer. Produces the freshest milk, paneer and pure ghee.</p>
+                    <div class="farmer-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(5.0)</span>
+                    </div>
+                </div>
+                <div class="farmer-card" data-animate="fade-up" data-delay="450">
+                    <div class="farmer-avatar">
+                        <div class="farmer-avatar-placeholder">👩‍🌾</div>
+                    </div>
+                    <h4>Meera Kumari</h4>
+                    <span class="farmer-location"><i class="fas fa-map-marker-alt"></i> Maharashtra</span>
+                    <p>Alphonso mango queen! Also grows guavas, pomegranates and organic bananas on her 10-acre farm.</p>
+                    <div class="farmer-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(4.9)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">💬 Reviews</span>
+                <h2 class="section-title">What People <span class="text-gradient">Say</span></h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"KisanBazaar changed how we buy groceries. The vegetables are incredibly fresh — you can literally taste the difference. And knowing that farmers get fair prices makes it even better!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩</div>
+                        <div>
+                            <strong>Priya Sharma</strong>
+                            <span>Mumbai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"As a farmer, this platform has been a blessing. I now earn 40% more than what I used to get from the mandi. The direct connection with buyers is priceless!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍🌾</div>
+                        <div>
+                            <strong>Harish Kumar</strong>
+                            <span>Farmer, Haryana</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"The spices I ordered are pure and aromatic — nothing like the adulterated stuff in local shops. Same day delivery is the cherry on top. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨</div>
+                        <div>
+                            <strong>Arun Nair</strong>
+                            <span>Bangalore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <span class="section-tag">📞 Get In Touch</span>
+                    <h2 class="section-title">Become a <span class="text-gradient">Seller</span> or <span class="text-gradient">Buyer</span></h2>
+                    <p>Whether you're a farmer looking to sell your produce or a buyer wanting fresh farm products, we'd love to hear from you!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 9416495501</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mohitnew135@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Saini Farm, Sondhapur Panipat, Haryana</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/AryanSaini135" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919416495501" target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap" data-animate="fade-left">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Send us a message</h3>
+                        <div class="form-group">
+                            <input type="text" id="formName" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="formEmail" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <select id="formType" required>
+                                <option value="" disabled selected>I am a...</option>
+                                <option value="farmer">Farmer / Seller</option>
+                                <option value="buyer">Buyer / Customer</option>
+                                <option value="partner">Business Partner</option>
+                            </select>
+                            <i class="fas fa-user-tag"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" placeholder="Your Message" rows="4" required></textarea>
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,40 C480,100 960,0 1440,40 L1440,0 L0,0 Z" fill="var(--bg-primary)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🌾</span>
+                        <span class="logo-text">Kisan<span class="logo-highlight">Bazaar</span></span>
+                    </a>
+                    <p>Bridging the gap between Indian farms and families. Fresh produce, fair prices, brighter futures.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/AryanSaini135" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919416495501" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Vegetables</a></li>
+                        <li><a href="#">Fruits</a></li>
+                        <li><a href="#">Spices</a></li>
+                        <li><a href="#">Dairy Products</a></li>
+                        <li><a href="#">Anaaj (Grains)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Become a Seller</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KisanBazaar. Made with ❤️ for Indian Farmers. Jai Kisan! 🇮🇳</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-basket"></i> Your Basket</h3>
+            <button class="cart-close" id="cartClose" aria-label="Close Cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <span>🧺</span>
+                <p>Your basket is empty</p>
+                <small>Add some fresh farm produce!</small>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotal">₹0</strong>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                <span>Checkout</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMsg">Item added to cart!</span>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Voiceflow Chatbot Widget -->
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '69f4c6551224fee774fb6260' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'development'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript";
+          s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+</body>
+</html>
